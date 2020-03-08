@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Button, Row, Col } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 
 const panel = [
   {
@@ -51,7 +51,7 @@ const HighlightsPanel = () => {
       <Container className="content">
         <Row>
           {panel.map((v, k) => (
-            <Col lg={4} md={6} xs={12} className="col-panel">
+            <Col lg={4} md={6} xs={12} className="col-panel" key={k}>
               <div className="panel">
                 <Row>
                   <Col xs={10}><h5>{v.title}</h5></Col>

@@ -15,7 +15,6 @@
   }
 
   .content {
-    
     .panel {
       padding: 15px;
       border: 1px solid #c4c4c4;
@@ -32,11 +31,20 @@
 
 @include media-breakpoint-up(md) {
   #highlights-panel {
-
     .content {
-
       .panel {
+        .panel-text {
+          height: 160px;
+        }
+      }
+    }
+  }
+}
 
+@include media-breakpoint-up(xl) {
+  #highlights-panel {
+    .content {
+      .panel {
         .panel-text {
           height: 120px;
         }

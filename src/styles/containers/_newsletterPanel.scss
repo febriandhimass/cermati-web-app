@@ -1,0 +1,62 @@
+#newsletter-panel {
+  z-index: 200;
+  max-width: 640px;
+  transform: translate(0, 0%);
+  position: fixed;
+  bottom: -250px;
+  display: block;
+  transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  background-color: #007bc1;
+  opacity: 90%;
+  padding: 20px;
+  color: #ffffff;
+
+  .wrapper {
+    .title {
+      font-weight: bold;
+    }
+
+    .text {
+      float: left;
+      margin-bottom: 20px;
+    }
+
+    .btn-action {
+      background-color: #ff8000;
+      width: 100%;
+    }
+
+    .btn-action:hover {
+      background-color: #cc6600;
+    }
+
+    .btn-action:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+#newsletter-panel.closed {
+  transform: translate(0, 100%);
+}
+
+@include media-breakpoint-down(sm) {
+  #newsletter-panel {
+    bottom: -280px;
+    
+    .wrapper {
+      .text {
+        font-size: 12px;
+      }
+      .input-email, .input-email::placeholder{
+        font-size: 12px;
+      }
+      .btn-action {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+}

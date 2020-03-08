@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Loading from 'components/Loading';
 
 const PageHome = Loadable({ loading: () => <Loading text={false}/>, loader: () => import('pages/Home') })
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <Router>
       <Switch>

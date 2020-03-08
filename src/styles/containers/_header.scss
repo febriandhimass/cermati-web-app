@@ -1,5 +1,5 @@
 #pg-header {
-  background: #004a75 url(../images/work-desk__dustin-lee.jpg) center center no-repeat;
+  background: #004a75 url(../../images/work-desk__dustin-lee.jpg) center center no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
   position: relative;
@@ -56,7 +56,6 @@
 
 @include media-breakpoint-up(md) {
   #pg-header {
-
     .header-bar{
       padding: 20px 0;
     }

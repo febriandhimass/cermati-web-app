@@ -1,5 +1,9 @@
 body {
   margin: 0;
+
+  p{
+    margin: 0;
+  }
 }
 
 // Bootstrap
@@ -15,6 +19,9 @@ body {
 }
 
 // import component style
-@import "containers/footer";
-@import "containers/header";
-@import "containers/highlightsPanel";
+@import "./containers/footer";
+@import "./containers/header";
+@import "./containers/highlightsPanel";
+@import "./containers//newsletterPanel";
+@import "./containers/notificationPanel";
+@import "./pages/home";

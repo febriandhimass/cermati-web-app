@@ -1,0 +1,62 @@
+#notification-panel {
+  z-index: 200;
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  transform: translate(0, 0%);
+  display: block;
+  transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  background-color: #e5e5e5;
+  padding: 20px;
+
+  .wrapper {
+    .text {
+      max-width: 640px;
+      float: left;
+    }
+
+    .btn-action {
+      background-color: #007bc1;
+      padding: 10px 20px;
+    }
+
+    .btn-action:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+#notification-panel.closed {
+  transform: translate(0, -100%);
+  position: fixed;
+}
+
+@include media-breakpoint-down(md) {
+  #notification-panel {
+    .wrapper {
+      .text {
+        font-size: 12px;
+      }
+      .btn-action {
+        font-size: 12px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #notification-panel {
+    .wrapper {
+      .text {
+        font-size: 10px;
+      }
+      .btn-action {
+        font-size: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

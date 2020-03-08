@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import Header from 'containers/Header'
 import HighlightsPanel from 'containers/HighlightsPanel'
 import Footer from 'containers/Footer'
+import NotificationPanel from 'containers/NotificationPanel'
+import NewsLetterPanel from 'containers/NewsletterPanel'
 
 const Home = () => {
   useEffect(() => {
@@ -9,10 +11,12 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="page-home">
+    <div id="page-home">
+      <NotificationPanel/>
       <Header/>
       <HighlightsPanel/>
       <Footer/>
+      <NewsLetterPanel/>
     </div>
   )
 }
