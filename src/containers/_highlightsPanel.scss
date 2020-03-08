@@ -1,0 +1,46 @@
+#highlights-panel {
+  padding: 40px 0;
+  background-color: #e5e5e5;
+
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .row {
+      margin: 0;
+      .subtitle {
+        max-width: 640px;
+      }
+    }
+  }
+
+  .content {
+    
+    .panel {
+      padding: 15px;
+      border: 1px solid #c4c4c4;
+      margin-bottom: 30px;
+
+      .panel-icon {
+        text-align: right;
+        color: #c4c4c4;
+        font-size: 16pt;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #highlights-panel {
+
+    .content {
+
+      .panel {
+
+        .panel-text {
+          height: 120px;
+        }
+      }
+    }
+  }
+}

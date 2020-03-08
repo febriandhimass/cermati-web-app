@@ -1,0 +1,85 @@
+#pg-header {
+  background: #004a75 url(../images/work-desk__dustin-lee.jpg) center center no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  position: relative;
+
+  .header-bar {
+    padding: 10px 0;
+  }
+
+  .header-logo {
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+
+    .img-logo {
+      max-width: 100% !important;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .hero-shot-panel {
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+
+    .hero-shot-headline {
+      font-size: 30px;
+    }
+
+    .hero-shot-subheadline {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .hero-shot-subtitle {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .btn-action {
+      font-weight: bold;
+      font-size: 16px;
+      padding: 10px 15px;
+      background: none;
+      border: 1px solid #fff;
+    }
+
+    .btn-action:hover{
+      background-color: #fff;
+      color: #007bc1
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #pg-header {
+
+    .header-bar{
+      padding: 20px 0;
+    }
+
+    .hero-shot-panel {
+      padding: 150px 0;
+
+      .hero-shot-headline {
+        font-size: 42px;
+      }
+
+      .hero-shot-subheadline {
+        font-size: 36px;
+      }
+
+      .hero-shot-subtitle {
+        font-size: 24px;
+      }
+      
+      .btn-action {
+        padding: 15px 25px;
+        font-size: 22px;
+      }
+    }
+  }
+}
