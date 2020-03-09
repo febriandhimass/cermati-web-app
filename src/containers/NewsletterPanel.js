@@ -21,10 +21,14 @@ const NewsLetterPanel = () => {
         <Row className="justify-content-end">
           <i className="fas fa-times" onClick={onClickClose}/>
         </Row>
-        <h5 className="title">Get the latest update in web technologies</h5>
-        <p className="text">
-          I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.
-        </p>
+        <Row>
+          <h5 className="title">Get the latest update in web technologies</h5>
+        </Row>
+        <Row>
+          <p className="text">
+            I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.
+          </p>
+        </Row>
         <Row>
           <Col md={8} lg={9} xs={12}>
             <Input placeholder="Email address" className="input-email"/>
