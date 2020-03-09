@@ -15,38 +15,87 @@
   }
 
   .content {
-    .panel {
-      padding: 15px;
-      border: 1px solid #c4c4c4;
-      margin-bottom: 30px;
+    .col-panel {
+      flex: 0 0 100%;
+      max-width: 100%;
 
-      .panel-icon {
-        text-align: right;
-        color: #c4c4c4;
-        font-size: 16pt;
-      }
-    }
-  }
-}
-
-@include media-breakpoint-up(md) {
-  #highlights-panel {
-    .content {
       .panel {
+        padding: 15px;
+        border: 1px solid #c4c4c4;
+        margin-bottom: 30px;
+
         .panel-text {
-          height: 160px;
+          font-size: 11pt;
+        }
+        .panel-icon {
+          text-align: right;
+          color: #c4c4c4;
+          font-size: 15pt;
         }
       }
     }
   }
 }
 
-@include media-breakpoint-up(xl) {
+@media (min-width: 480px) {
   #highlights-panel {
     .content {
-      .panel {
-        .panel-text {
-          height: 120px;
+      .col-panel {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        .panel {
+          .panel-text {
+            height: 170px;
+            font-size: 10pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #highlights-panel {
+    .content {
+      .col-panel {
+        .panel {
+          .panel-text {
+            height: 140px;
+            font-size: 11pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  #highlights-panel {
+    .content {
+      .col-panel {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+
+        .panel {
+          .panel-text {
+            height: 210px;
+            font-size: 11pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #highlights-panel {
+    .content {
+      .col-panel {
+        .panel {
+          .panel-text {
+            height: 130px;
+          }
         }
       }
     }

@@ -51,11 +51,11 @@ const HighlightsPanel = () => {
       <Container className="content">
         <Row>
           {panel.map((v, k) => (
-            <Col lg={4} md={6} xs={12} className="col-panel" key={k}>
+            <Col className="col-panel" key={k}>
               <div className="panel">
                 <Row>
-                  <Col xs={10}><h5>{v.title}</h5></Col>
-                  <Col xs={2} className="panel-icon"><i className={v.icon} /></Col>
+                  <Col xs={9}><h5>{v.title}</h5></Col>
+                  <Col xs={3} className="panel-icon"><i className={v.icon} /></Col>
                 </Row>
                 <p className="panel-text">{v.text}</p>
               </div>

@@ -54,7 +54,25 @@
   }
 }
 
-@include media-breakpoint-up(md) {
+@media (min-width: 480px) {
+  #pg-header {
+    .hero-shot-panel {
+      .hero-shot-headline {
+        font-size: 28px;
+      }
+
+      .hero-shot-subheadline {
+        font-size: 24px;
+      }
+
+      .hero-shot-subtitle {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
   #pg-header {
     .header-bar{
       padding: 20px 0;
